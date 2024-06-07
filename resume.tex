@@ -126,13 +126,14 @@
       {Software Engineer}{August 2018 -- Present}
       {FIRST RF Corporation}{Boulder, CO}
       \resumeItemListStart
-        \resumeItem{Designed and implemented a user-friendly UI/UX interface for a radio mesh network web GUI using React and Typescript, with a Python backend, and deployed it on 10 radios with Ansible}
+        \resumeItem{Redesigned an internal antenna plotting tool to address limited features and slow performance. Led the open-source development of the new web-based version, making the tool publicly available. Utilized React and TypeScript for the front end and Python for the back end}
+        \resumeItem{Designed and implemented a user-friendly UI/UX interface for a radio mesh network web GUI using React and Typescript, with a Python back end (FastAPI), and deployed it on 10 radios with Ansible}
         \resumeItem{Led a cross-functional team of 5 members in an antenna R\&D effort, managing technical specifications and fostering collaboration across teams to ensure timely project delivery}
-        \resumeItem{Developed and implemented a Python-based test visualization tool that reduced testing time by 70\%, optimizing production efficiency}
-        \resumeItem{Engineered a cross-platform bootloader initially in Python, later rewritten in Go for a 200\% speed increase}
-        \resumeItem{Created packet-based communications interfaces in Python and C with auto-generated documentation}
+        \resumeItem{Developed a Python-based visualization tool for testing thousands of antennas during production, reducing the testing time from 5 minutes to 1 minute}
+        \resumeItem{Engineered a cross-platform bootloader to load new firmware on antennas that have been shipped to customers. Initially written in Python, later rewritten in Go for a 200\% speed increase}
+        \resumeItem{Created packet-based communication interfaces in Python and C with auto-generated documentation, using UDP sockets for Ethernet communications}
         \resumeItem{Utilized GitLab CI/CD tools for semantic versioning, unit testing, linting, and artifact generation}
-        \resumeItem{Designed and implemented maintainable and reusable software drivers in C, supporting thousands of lines of code}
+        \resumeItem{Designed and implemented numerous maintainable and reusable software drivers in C, supporting thousands of lines of code. These drivers are used on all our processors and utilized by everyone in the group}
       \resumeItemListEnd
       
 % -----------Multiple Positions Heading-----------
@@ -158,18 +159,8 @@
       \resumeItemListStart
         \resumeItem{Helped design a small form factor system that was intended to be used to triangulate large ships}
         \resumeItem{Created and implemented C-based software drivers for interfacing with a GPS module}
-        \resumeItem{Built a packet based communication interface and test framework in Python}
+        \resumeItem{Built a packet based UART communication interface and test framework in Python}
       \resumeItemListEnd
-
-    \resumeSubheading
-      {Verification Engineering Internship}{May 2015 --  January 2016}
-      {Seagate Technology}{Longmont, CO}
-      \resumeItemListStart
-        \resumeItem{Learned to work in a Red Hat UNIX environment and in a large code base}
-        \resumeItem{Developed SystemVerilog code to test the serial communications interface in an ASIC channel}
-        \resumeItem{Built a logger and timing simulations for monitoring thousands of packets through a servo interface}
-      \resumeItemListEnd
-
   \resumeSubHeadingListEnd
     
 %-----------EDUCATION-----------
@@ -187,18 +178,20 @@
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{Real Time Chat Application} $|$ \emph{React, Go}}{April 2024}
+          {\textbf{C-like Language Interpreter in Go} $|$ \emph{Go}}{June 2024}
           \resumeItemListStart
-            \resumeItem{Developed and deployed a real-time chat client using JavaScript with React for the frontend and Go for the backend}
-            \resumeItem{Employed the Fetch API for seamless client-server communication, enabling efficient data retrieval and updates within the chat application}
+            \resumeItem{Built an interpreter for a C-like programming language from scratch using the Go language}
+            \resumeItem{Developed a lexer, parser, and Abstract Syntax Tree (AST) to facilitate the interpretation process}
+            \resumeItem{Implemented closures, understanding their functionality and purpose}
+            \resumeItem{Applied the Pratt parsing technique and created a recursive descent parser}
+            \resumeItem{Explored built-in data structures and their significance in programming languages}
+            \resumeItem{Created a Read-Eval-Print Loop (REPL) to interactively execute code}
           \resumeItemListEnd
       \resumeProjectHeading
-          {\textbf{Lynx Radio} $|$ \emph{C, Python, TI RTOS, Hardware}}{August 2020 -- May 2023}
+          {\textbf{Real Time Chat Application} $|$ \emph{React, Go}}{April 2024}
           \resumeItemListStart
-            \resumeItem{Developed custom hardware and firmware for a two way wireless communications device (range of 0.5 miles)}
-            \resumeItem{Wrote firmware drivers in C for an audio codec, wireless transceiver, and battery manager}
-            \resumeItem{Used the TI RTOS for managing threads and synchronization of system devices}
-            \resumeItem{Created python scripts for visualizing audio data and generating audio signals for testing}
+            \resumeItem{Developed a real-time chat client using JavaScript with React for the frontend and Go for the backend}
+            \resumeItem{Employed the Fetch API for seamless client-server communication, enabling efficient data retrieval and updates within the chat application}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
@@ -206,8 +199,8 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages/Frameworks}{: C (proficient), Python (proficient), Go (novice), Javacsript/TypeScript (novice), SQL (novice), HTML/CSS, React} \\
-     \textbf{Developer Tools}{: Git, CI/CD, npm, Vim/Neovim, VS Code, Operating Systems, PostgreSQL} \\
+     \textbf{Languages/Frameworks}{: Javacsript/TypeScript (proficient), React(Proficient), C (proficient), Python (proficient), HTML/CSS (proficient), Go (novice), SQL (novice) } \\
+     \textbf{Developer Tools}{: Git, CI/CD, npm, pyenv, Vim/Neovim, VS Code, Operating Systems} \\
     }}
  \end{itemize}
 
